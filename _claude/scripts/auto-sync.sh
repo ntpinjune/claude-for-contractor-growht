@@ -1,11 +1,9 @@
 #!/bin/bash
 # Auto-sync the Obsidian vault to GitHub — runs on Claude Code Stop hook.
 # Best-effort and silent: never propagates errors, so session exit is never blocked.
-#
-# Configure VAULT_DIR to point at where you cloned this vault locally.
 
 set -u
-REPO="${VAULT_DIR:-$HOME/Obsidian/vault}"
+REPO="$HOME/Obsidian/ContractorGrowth"
 
 # Silent no-op if the vault is missing or not a git repo.
 [ -d "$REPO/.git" ] || exit 0

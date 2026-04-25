@@ -1,11 +1,9 @@
 #!/bin/bash
 # Auto-pull the Obsidian vault from GitHub — runs on Claude Code SessionStart hook.
 # Best-effort and silent: never blocks session start.
-#
-# Configure VAULT_DIR to point at where you cloned this vault locally.
 
 set -u
-REPO="${VAULT_DIR:-$HOME/Obsidian/vault}"
+REPO="$HOME/Obsidian/ContractorGrowth"
 
 [ -d "$REPO/.git" ] || exit 0
 cd "$REPO" || exit 0

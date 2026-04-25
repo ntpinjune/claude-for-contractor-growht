@@ -4,6 +4,3 @@
 .trash/
 *.swp
 *.swo
-
-# per-user Claude Code permission state
-.claude/settings.local.json

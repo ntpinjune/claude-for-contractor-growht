@@ -43,19 +43,15 @@ Deleted files are detected and their chunks removed.
 A launchd agent runs `watcher.py` in the background. It watches the vault
 recursively, debounces 3 seconds, then triggers an incremental reindex.
 
-First, edit `launchd.plist` and replace every `__VAULT_PATH__` with the absolute
-path to your vault (e.g. `/Users/yourname/Obsidian/vault`). Pick a unique
-`Label` (the reverse-DNS name) too. Then:
-
 ```
-cp launchd.plist ~/Library/LaunchAgents/com.example.obsidian-indexer.plist
-launchctl load ~/Library/LaunchAgents/com.example.obsidian-indexer.plist
+cp launchd.plist ~/Library/LaunchAgents/ai.contractorgrowth.obsidian-indexer.plist
+launchctl load ~/Library/LaunchAgents/ai.contractorgrowth.obsidian-indexer.plist
 ```
 
 Stop / start / reload:
 ```
-launchctl unload ~/Library/LaunchAgents/com.example.obsidian-indexer.plist
-launchctl load   ~/Library/LaunchAgents/com.example.obsidian-indexer.plist
+launchctl unload ~/Library/LaunchAgents/ai.contractorgrowth.obsidian-indexer.plist
+launchctl load   ~/Library/LaunchAgents/ai.contractorgrowth.obsidian-indexer.plist
 ```
 
 Live log:

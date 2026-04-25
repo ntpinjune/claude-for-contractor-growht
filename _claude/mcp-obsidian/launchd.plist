@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Edit the four __VAULT_PATH__ placeholders below to point at your actual vault location
-  (e.g. /Users/yourname/Obsidian/vault), then copy this file to:
-    ~/Library/LaunchAgents/com.example.obsidian-indexer.plist
-  See README.md for full setup instructions.
--->
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.example.obsidian-indexer</string>
+    <string>ai.contractorgrowth.obsidian-indexer</string>
     <key>ProgramArguments</key>
     <array>
-        <string>__VAULT_PATH__/_claude/mcp-obsidian/.venv/bin/python</string>
-        <string>__VAULT_PATH__/_claude/mcp-obsidian/watcher.py</string>
+        <string>/Users/admin/Obsidian/ContractorGrowth/_claude/mcp-obsidian/.venv/bin/python</string>
+        <string>/Users/admin/Obsidian/ContractorGrowth/_claude/mcp-obsidian/watcher.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>__VAULT_PATH__/_claude/mcp-obsidian</string>
+    <string>/Users/admin/Obsidian/ContractorGrowth/_claude/mcp-obsidian</string>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
@@ -27,8 +21,8 @@
     <key>ThrottleInterval</key>
     <integer>10</integer>
     <key>StandardOutPath</key>
-    <string>__VAULT_PATH__/_claude/mcp-obsidian/watcher.log</string>
+    <string>/Users/admin/Obsidian/ContractorGrowth/_claude/mcp-obsidian/watcher.log</string>
     <key>StandardErrorPath</key>
-    <string>__VAULT_PATH__/_claude/mcp-obsidian/watcher.log</string>
+    <string>/Users/admin/Obsidian/ContractorGrowth/_claude/mcp-obsidian/watcher.log</string>
 </dict>
 </plist>

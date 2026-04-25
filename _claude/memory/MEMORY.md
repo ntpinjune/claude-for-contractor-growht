@@ -1,21 +1,29 @@
-<!--
-  This file is the index for Claude Code's auto-memory system. Each line points
-  to a separate memory file in this directory.
-
-  Claude Code automatically loads MEMORY.md into every conversation context.
-  When Claude learns something durable about you, your work, or your preferences,
-  it writes a new memory file (e.g. user_profile.md, feedback_tone.md) and adds
-  a one-line entry here.
-
-  Memory types:
-    - user        — who you are, how you work, what level of depth you want
-    - feedback    — corrections you've given Claude, or approaches you've validated
-    - project     — ongoing work, deadlines, why decisions were made
-    - reference   — pointers to external systems (Linear projects, dashboards, etc.)
-
-  This file starts empty. As you use Claude Code in this vault, memories will
-  accumulate here automatically. You can also ask Claude to "remember X" to
-  force-save a memory.
-
-  See .claude/CLAUDE.md or the global ~/.claude/CLAUDE.md for full instructions.
--->
+- [User profile](user_profile.md) — 16yo contractor-growth agency owner; community college + Stanford research + student gov; wants depth
+- [Response tone and style](feedback_tone.md) — plain language, no hallucination, no talking down
+- [Typical work context](project_work_context.md) — mostly business docs and systems work, not code
+- [Obsidian vault is primary knowledge source](project_notion_primary.md) — search the vault first for any business context; Notion is secondary
+- [Vault vision — lifelong second brain](project_vault_vision.md) — vault is Noah's centralized long-term knowledge system; default to searching it first and writing back to it
+- [Business operations — agency, mentor, team](project_business_operations.md) — Jack M (Impression Empire) is mentor; SDRs run full-cycle; Skool course ingestion is a TODO
+- [SMA Knowledge HQ — core business reference](reference_sma_knowledge_hq.md) — 115-file KB at `business/knowledge-hq/`: Jack M 41 consulting calls + full Matt Ryder sales course. Search first for any SMA ops question.
+- [Core goal — streamlined pipelines](project_core_goal_pipelines.md) — synthesize raw source docs into single clean operational SOPs/pipelines
+- [Daily to-do list workflow](project_todos_workflow.md) — Noah talks, Claude captures tasks into `todos/YYYY-MM-DD.md`. Auto-add tasks as they come up.
+- [Daily todos always stay synced Obsidian → Notion](project_todos_notion_sync.md) — EVERY vault todo edit triggers immediate Notion page update in the same turn; no batching, no judgment calls
+- [Phone/mobile Claude access is low-leverage](feedback_phone_access_low_leverage.md) — don't pitch Remote Control / mobile Claude workflows; Noah explicitly deprioritized 2026-04-23
+- [Blanket permission — don't ask](feedback_never_push.md) — standing permission to act without confirmation on routine things (incl. git push); narrow safety net only for destructive/irreversible actions
+- [When given clear commands, just execute](feedback_just_execute_clear_commands.md) — explicit instructions get run, not re-litigated; flag risks as one-line notes alongside execution, not blockers
+- [Speed matters on clearly scoped tasks](feedback_speed_over_polish.md) — when the ask is bounded, ship fast; don't add audits/polish/sections Noah didn't ask for
+- [Research existing tools before improvising](feedback_research_first.md) — when hitting a limitation, find what skills/connectors/plugins already exist before building a custom workaround
+- [Default to Jack's lens for business questions](feedback_jack_lens.md) — business answers run through "what would Jack do" using SMA Knowledge HQ, not generic logic
+- [Multi-source research default](feedback_research_multisource.md) — default fan-out across Exa + Perplexity (always on); Tavily/Brave/Firecrawl are dormant — restore per `reference_disabled_mcps.md` if needed
+- [Disabled MCPs — restore on demand](reference_disabled_mcps.md) — brave, firecrawl, tavily, stripe are off by default to save tokens; re-enable flow documented
+- [User context is not a build order](feedback_context_vs_instructions.md) — when Noah describes himself, remember it; don't scaffold folders/files from it unless explicitly asked
+- [Obsidian vault location and structure](reference_obsidian_vault.md) — `~/Obsidian/ContractorGrowth`; top-level buckets `business/`, `notes/`, `todos/` (reorg 2026-04-24)
+- [Daily business brief system](reference_daily_brief.md) — scheduled agent drops a biz-angle brief at `business/trends/daily-briefs/YYYY-MM-DD.md` each morning
+- [Super-agent vision — one Claude for everything](project_super_agent_vision.md) — goal is stop outsourcing to other AI tools; solve new needs inside the vault+MCP stack first
+- [Memory stack — three layers](reference_memory_stack.md) — curated markdown memory (`_claude/memory/`) + vault RAG (`obsidian-vault` MCP) + conversation RAG (`mempalace` MCP); decision tree for which to query
+- [SDR call review pipeline](reference_sdr_call_review_pipeline.md) — mlx-whisper + imageio-ffmpeg installed, `business/employees/{sdr-name}/call-recordings/YYYY-MM-DD/` folder convention, rubric at `business/sops/sdr-call-rubric.md`; reuse for every weekly review batch
+- [High-priority team folders](reference_high_priority_team.md) — Aly, Jowanna, Jobby each get `README.md` + `insights.md` + `todos.md` + `call-recordings/` under `business/employees/`; refactor not append after every coaching
+- [Canonical offer and pricing](reference_offer_and_pricing.md) — $1k setup + $150/booked appt + $44/day ad spend. Supersedes older training doc numbers. No upfront packages.
+- [Rank coaching priorities by revenue impact, not ease of fix](feedback_8020_ranking.md) — frequent cosmetic mistakes (openers, wording) are not the 80/20. Find where each call actually died and rank from there.
+- [End-of-day review workflow](project_eod_review_workflow.md) — every day Noah walks through what got done; Claude appends a rated `## EOD Review` to the day's todo file. Over time this builds a searchable productivity database (high vs low leverage, revenue events, patterns across days).
+- [Gerryk website — parked](project_gerryk_website.md) — client landscaping site live at gerryk-website.vercel.app (placeholder content); blocked on Square login before content swap + DNS transfer

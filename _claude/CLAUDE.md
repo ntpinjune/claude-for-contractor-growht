@@ -1,10 +1,10 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with this vault.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## About the user
 
-> **Customize this section.** Describe yourself: role, business, what you spend most of your time on, what level of detail you want in answers.
+Runs a business and is focused on growing it. Interested in business strategy and optimizing systems. Capable — do not over-explain basics or talk down. Go deep when researching.
 
 ## Response style
 
@@ -15,8 +15,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 
 ## Work context
 
-> **Customize this section.** Most work in this vault is _____ (e.g. business operations, research, journaling, code review). Frame trade-offs in terms that match (time saved, cost, impact / latency, complexity).
+Most work is business-related: ingesting business documents, analyzing them, and helping improve systems and operations. It is usually not traditional software engineering. When trade-offs come up, frame them in business terms (time saved, cost, impact) rather than engineering abstractions.
 
 ## Rules
 
-- > **Customize.** Add any standing permissions or guardrails (e.g. "always confirm before pushing to main", "never edit files in `clients/` without asking").
+- User has granted broad, standing permission: do not ask for confirmation on routine actions, including `git push` and other remote-publishing commands. Proceed directly.
+- Safety net still applies: genuinely destructive/irreversible actions (force-push to main, `git reset --hard` over unsaved work, deleting data, sending messages to other people, spending money) — flag before doing.
