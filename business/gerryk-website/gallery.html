@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gallery — Gerryk Landscaping</title>
+<meta name="description" content="Recent Gerryk Landscaping projects across the Peninsula — residential and commercial landscape design, hardscape, and outdoor living transformations." />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#004225" />
+<link rel="canonical" href="https://gerryk-website.vercel.app/gallery.html" />
+<meta property="og:title" content="Gallery — Gerryk Landscaping" />
+<meta property="og:description" content="Recent Gerryk Landscaping projects across the Peninsula — residential and commercial landscape design, hardscape, and outdoor living transformations." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gerryk-website.vercel.app/gallery.html" />
+<meta property="og:image" content="https://gerryk-website.vercel.app/photos/hero-deck-dining-1600.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" /></noscript>
+<link rel="stylesheet" href="styles.css?v=36" />
+</head>
+<body data-page="gallery">
+<div id="header-slot" style="min-height:124px"></div>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb">Our Work</div>
+    <h1>Recent <span class="accent">Projects</span></h1>
+    <p>A selection of landscape construction projects from across the Bay Area. Filter by type below, or scroll for the long version.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="filter-bar">
+      <button class="active">All Work</button>
+      <button>Hardscape</button>
+      <button>Retaining Walls</button>
+      <button>Pergolas</button>
+      <button>Full Rebuilds</button>
+      <button>Demolition</button>
+    </div>
+    <div class="project-list" id="projects"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Your Project <span class="accent">Next</span>?</h2>
+    <p>Most projects on this page started with a single phone call.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Get A Quote</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot" style="min-height:420px"></div>
+<script src="shared.js?v=30"></script>
+<script>
+  const projects = [
+    { name: 'Mill Valley Hillside', em: 'Retaining Walls', city: 'Mill Valley · 2024', size: '6,400 sf', dur: '11 mo', scope: 'Full Build', desc: 'South-facing slope reterraced with drystack retaining walls, new drainage, and a multi-level paver patio.' },
+    { name: 'Noe Valley Courtyard', em: 'Hardscape', city: 'San Francisco · 2024', size: '480 sf', dur: '4 mo', scope: 'Hardscape', desc: 'Walled urban courtyard rebuilt with board-formed concrete bench, custom steel planters, and decomposed granite pathways.' },
+    { name: 'Half Moon Bay Coastal', em: 'Full Rebuild', city: 'Half Moon Bay · 2023', size: '14,200 sf', dur: '14 mo', scope: 'Full Project', desc: 'Complete backyard rebuild: demolition, grading, hardscape, pergola install and outdoor kitchen fabrication.' },
+    { name: 'Berkeley Cor-Ten Garden', em: 'Hardscape', city: 'Berkeley · 2023', size: '2,100 sf', dur: '7 mo', scope: 'Design + Build', desc: 'Cor-ten retaining walls, custom steel planters, fire pit, and a board-formed concrete walkway system.' },
+    { name: 'Palo Alto Pool Rebuild', em: 'Demolition', city: 'Palo Alto · 2024', size: '3,800 sf', dur: '6 mo', scope: 'Demo + Rebuild', desc: 'Old pool demolition, new grading, and a full backyard rebuild with paver decking and built-in fire feature.' },
+    { name: 'Tiburon Pavilion', em: 'Pergolas', city: 'Tiburon · 2022', size: '1,200 sf', dur: '8 mo', scope: 'Custom Build', desc: 'Timber pavilion built around an existing oak, with wraparound bench and outdoor kitchen in board-formed concrete.' },
+  ];
+  const projImgs = [
+    'photos/paver-driveway-water.webp',
+    'photos/drought-front-gravel.webp',
+    'photos/side-yard-stepping-stones.webp',
+    'photos/paver-patio-covered.webp',
+    'photos/outdoor-fireplace-grill.webp',
+    'photos/pergola-dining-turf.webp',
+  ];
+  document.getElementById('projects').innerHTML = projects.map((p, i) => `
+    <article class="project">
+      <div class="img ph has-img" data-label="${p.name.toUpperCase()}"><img src="${projImgs[i]}" alt="${p.name}" loading="lazy"/></div>
+      <div>
+        <div class="num">Project No. ${String(i+1).padStart(2,'0')} · ${p.em}</div>
+        <h3>${p.name.split(' ').slice(0,-1).join(' ')} <span class="accent">${p.name.split(' ').slice(-1)}</span></h3>
+        <p>${p.desc}</p>
+        <div class="info">
+          <div><div class="lbl">Location</div><div class="val">${p.city}</div></div>
+          <div><div class="lbl">Site</div><div class="val">${p.size}</div></div>
+          <div><div class="lbl">Scope</div><div class="val">${p.scope}</div></div>
+        </div>
+      </div>
+    </article>
+  `).join('');
+</script>
+</body>
+</html>

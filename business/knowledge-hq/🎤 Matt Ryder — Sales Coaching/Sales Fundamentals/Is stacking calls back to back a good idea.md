@@ -1,0 +1,15 @@
+---
+mentor: "[[Matt Ryder]]"
+course: "Sales Fundamentals"
+tags: [sma, matt-ryder-coaching, is-stacking-calls-back-to-back-a-good-id]
+---
+
+# Is stacking calls back to back a good idea
+
+# Is stacking calls back to back a good idea
+
+---
+
+is stacking calls back to back a good idea. And so this boils down to a question of workload capacity. How easy sales is or isn't for you. And it's going to kind of open your eyes to a few things. So sales people are generally speaking not afraid of hard work. I think that there's a big difference between being productive and being busy. But in saying that a lot of people will like stack themselves with the many calls back to back as possible. And so it's like, is that a good idea or not? Well, for some people, yes, for some people, no. OK? So if you're someone who has to think their way through sales, still, then chances are stacking the calls all back to back is not going to be a good idea because, but the time you hit your, say, fourth, fifth, sixth call on a row, you're going to be terrible for the subsequent calls. And so the key is like you need to start to understand the correct, I guess, tempo that you can handle while being an optimal performance. Like when you're doing sales, your problem solving in real time. And so you're using your brain to try and figure out the puzzle that's in front of you. And the puzzle is a person, there's lots of variables, et cetera, et cetera. And so Jeremy's speaking like what I used to do is I used to do three calls than a break, three calls than a break, yada, yada, yada, yada. Which means that if you can get your call time down to, like, say, 45 minutes, it's you're like, or just down from whatever you're at, you can fit many more calls into the same period of time. And therefore you have a higher income potential. So I don't think it's a good idea to get a lot of calls back to back. I would highly recommend making an end of call form for yourself that has the timestamp of every call. So after every call, he's been two minutes filled out a form to this show, no show, that they sell, no sell, if so, like, what objection? And t
+
+hat will give you, like, show, break per day, per time of day. It'll also give you, you know, you can put that into chatGPT and I'll put some prompts down below here, where it's like, you know, find the data and be like, after my, like, what's the data, like, say, is there a certain amount of calls? Where after that call, I inconsistently closed, because what if, after every six, seven to eight call in a row, you need to, it's a three percent close rate on those calls. That's not because those leads are bad. It's because, like, you're just cooked to your fried. So those are kind of things you need to bear in mind and watch out for. And this is the same for, like, outbound, inbound, whatever. It's, like, how much brain capacity do you have after a long period of work? And so there's no point taking calls when you're not going to close them because you're absolutely fried.
